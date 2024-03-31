@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/CSS/layout-navbar.css" rel="stylesheet" />
+    <link href="@ViewBag.CssStyle" rel="stylesheet" />
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <div class="navbar">
+        <div class="logoContainer">
+            <img src="~/Content/Media/officialLogo.JPG"  width="200px">
+        </div>
+        
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">LOANS</a></li>
+            <li><a href="#">CARDS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACTS</a></li>
+        </ul>
+
+        
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <div class="footer">
+        <div><b>SEE ALSO</b><br /><br /><br />
+            <ul>
+                <li>Corporate Governance 2023</li>
+
+                <li>UCPB Corner</li>
+
+                <li>HARVEST Updates</li>
+
+                <li>GAD Corner</li>
+
+                <li> FAQs</li>
+
+                <li>Other Deposit Products</li>
+
+                <li>Debit Cards</li>
+
+                <li>Credit Cards</li>
+
+                <li>ATM Services</li>
+
+                <li>Careers</li>
+            </ul>
+        </div>
+        <div>
+            <b>QUICK LINKS</b><br /><br /><br />
+            <ul>
+               
+
+                <li>
+                    Social Media Sites
+                </li>
+
+                <li> ACGR</li>
+
+                <li>  About Us</li>
+
+                <li> Downloadables</li>
+
+                <li>  Request for Information</li>
+
+                <li> Consumer Awareness Program</li>
+
+                <li>   Environmental and Social Safeguards</li>
+
+                <li>  Policies and Issuances</li>
+
+                <li> Disclosures</li>
+
+                <li> Contact Us</li>
+
+                <li> Procurement</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+        <div>
+            <b>PUBLICATIONS</b><br /><br /><br />
+            <ul>
+                <li>Archive</li>
+
+                <li>Serves</li>
+
+                <li>Sustainability Report</li>
+
+                <li>Annual Report</li>
+
+                <li>Harvest</li>
+            </ul>
+        </div>
+        <div>
+            <b>SECURITY AND PRIVACY</b><br /><br /><br />
+            <ul>
+                <li> Data Privacy Statement</li>
+
+                <li>Security Policy</li>
+
+                <li>Security Tips Link</li>
+
+                <li>Terms & Conditions</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,354 @@
+﻿@{
+    Layout = "~/Views/Shared/Layout2.cshtml";
+}
+
+
+@{
+    ViewBag.Title = "Dashboard";
+    ViewBag.CssStyle = "/Content/CSS/index.css";
+
+}
+
+
+
+<div class="introVide0">
+
+    <video autoplay muted loop id="videoBackground">
+        <source src="~/Content/Media/IntroVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+        <div>
+            <div>UNLOCKING</div>
+            <div style=" font-size: 40px; font-weight: bold; letter-spacing: 1px; background-color: #58a7e6; padding: 5px; color: black;">
+                DREAMS TOGETHER
+            </div> <br />
+            <div class="parent">
+                <div id="gotoLogIn">LOGIN</div>
+                <div id="gotoSignUp">SIGNUP</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<div class="second">
+    <h1>Explore our Services</h1>
+    <div class="scroll-container">
+        <div class="scroll-content">
+
+            <div class="scroll-item">
+                <div class="pic">
+                    <img src="~/Content/Media/1.JPG" alt="Alternate Text" />
+                </div>
+                <div class="descrition">
+                    <center>
+                        <hr />
+                        <br />
+                        <h2>Personal Loans </h2> <br /><br />
+                        <p>Borrow money for personal needs, like education or emergencies</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="scroll-item">
+                <div class="pic">
+                    <img src="~/Content/Media/2.JPG" alt="Alternate Text" />
+                </div>
+                <div class="descrition">
+                    <center>
+                        <hr />
+                        <br />
+                        <h2>Mortgage Loans</h2> <br /><br />
+                        <p>Finance the purchase of homes or real estate properties.</p>
+                    </center>
+
+                </div>
+            </div>
+
+            <div class="scroll-item">
+                <div class="pic">
+                    <img src="~/Content/Media/3.JPG" alt="Alternate Text" />
+                </div>
+                <div class="descrition">
+                    <center>
+                        <hr />
+                        <br />
+                        <h2>Business Loans </h2> <br /><br />
+                        <p>Obtain funds for business needs, such as expansion or equipment purchase.</p>
+                    </center>
+
+                </div>
+            </div>
+
+            <div class="scroll-item">
+                <div class="pic">
+                    <img src="~/Content/Media/4.JPG" alt="Alternate Text" />
+                </div>
+                <div class="descrition">
+                    <center>
+                        <hr />
+                        <br />
+                        <h2>Auto Loans </h2> <br /><br />
+                        <p>Finance the purchase of vehicles, with repayment over time</p>
+                    </center>
+
+                </div>
+            </div>
+
+            <div class="scroll-item">
+                <div class="pic">
+                    <img src="~/Content/Media/5.JPG" alt="Alternate Text" />
+                </div>
+                <div class="descrition">
+                    <center>
+                        <hr />
+                        <br />
+                        <h2>Credit Cards </h2> <br /><br />
+                        <p>Make purchases on credit, repayable in full or in installments</p>
+                    </center>
+
+                </div>
+            </div>
+
+            <div class="scroll-item">
+                <div class="pic">
+                    <img src="~/Content/Media/6.JPG" alt="Alternate Text" />
+                </div>
+                <div class="descrition">
+                    <center>
+                        <hr />
+                        <br />
+                        <h2>Overdraft Facilities </h2> <br /><br />
+                        <p>Access additional funds beyond account balance, with interest.</p>
+                    </center>
+
+                </div>
+            </div>
+
+            <div class="scroll-item">
+                <div class="pic">
+                    <img src="~/Content/Media/7.JPG" alt="Alternate Text" />
+                </div>
+                <div class="descrition">
+                    <center>
+                        <hr />
+                        <br />
+                        <h2>Student Loans </h2> <br /><br />
+                        <p>Borrow money for educational expenses, repayable post-education.</p>
+                    </center>
+
+                </div>
+            </div>
+
+            <div class="scroll-item">
+                <div class="pic">
+                    <img src="~/Content/Media/8.JPG" alt="Alternate Text" />
+                </div>
+                <div class="descrition">
+                    <center>
+                        <hr />
+                        <br />
+                        <h2>Home Equity Loans </h2> <br /><br />
+                        <p>Borrow against home equity for large expenses.</p>
+                    </center>
+
+                </div>
+            </div>
+
+            <div class="scroll-item">
+                <div class="pic">
+                    <img src="~/Content/Media/9.JPG" alt="Alternate Text" />
+                </div>
+                <div class="descrition">
+                    <center>
+                        <hr />
+                        <br />
+                        <h2>Savings and Investment Services </h2> <br /><br />
+                        <p>Save and invest money for future goals and retirement.</p>
+                    </center>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <img id="scroll-left" src="~/Content/Media/left.png" alt="left" />
+    <img id="scroll-right" src="~/Content/Media/right.png" alt="right" />
+</div>
+
+<div class="third">
+
+    <br><br><br>
+
+    <h1>Loan Calculator</h1>
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Months to Pay</th>
+                <th></th>
+                <th>Monthly Installment</th>
+                <th></th>
+                <th>Profit</th>
+                <th></th>
+                <th>Penalty</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Loan Amount: <input id="TextBox2" type="number" /></td>
+                <td class="first">12 Months</td>
+                <td></td>
+                <td id="Label3">0</td>
+                <td></td>
+                <td id="Label9" class="last">0</td>
+                <td></td>
+                <td id="Label16" class="last">0</td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Interest Amount: <input id="TextBox1" type="number" /></td>
+                <td class="first">15 Months</td>
+                <td></td>
+                <td id="Label4">0</td>
+                <td></td>
+                <td id="Label10" class="last">0</td>
+                <td></td>
+                <td id="Label17" class="last">0</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Penalty Per Month: <input id="TextBox3" type="number" /></td>
+                <td class="first">24 motnhs</td>
+                <td></td>
+                <td id="Label5">0</td>
+                <td></td>
+                <td id="Label11" class="last">0</td>
+                <td></td>
+                <td id="Label18" class="last">0</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Missed Payment(months): <input id="TextBox4" type="number" /></td>
+                <td class="first">30 Months</td>
+                <td></td>
+                <td id="Label6">0</td>
+                <td></td>
+                <td id="Label12" class="last">0</td>
+                <td></td>
+                <td id="Label19" class="last">0</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="first">36 Months</td>
+                <td></td>
+                <td id="Label7">0</td>
+                <td></td>
+                <td id="Label13" class="last">0</td>
+                <td></td>
+                <td id="Label20" class="last">0</td>
+                <td></td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td><button id="submit">Compute</button></td>
+                <td>60 Months</td>
+                <td></td>
+                <td id="Label8">0</td>
+                <td></td>
+                <td id="Label14">0</td>
+                <td></td>
+                <td id="Label21">0</td>
+                <td></td>
+
+            </tr>
+        </tfoot>
+
+    </table>
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+<@*div class="blur">g</div>
+    <div>*@
+
+    <div class="login">
+        <h1>Login</h1>
+        <form method="post">
+            <input type="text" name="u" placeholder="Username" required="required" />
+            <input type="password" name="p" placeholder="Password" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+        </form>
+    </div>
+
+</div>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const scrollContainer = document.querySelector('.second .scroll-container');
+        const scrollContent = document.querySelector('.second .scroll-content');
+        const scrollLeftButton = document.getElementById('scroll-left');
+        const scrollRightButton = document.getElementById('scroll-right');
+
+        scrollLeftButton.addEventListener('click', function () {
+            // Smoothly scroll left by 100 pixels
+            scrollContainer.scrollBy({
+                left: -250,
+                behavior: 'smooth'
+            });
+        });
+
+        scrollRightButton.addEventListener('click', function () {
+            // Smoothly scroll right by 100 pixels
+            scrollContainer.scrollBy({
+                left: 250,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+
+
+
+
+    let login = document.querySelector(".login");
+    let gotoLogIn = document.querySelector("#gotoLogIn");
+    let gotoSignUp = document.querySelector("#gotoSignUp");
+
+    gotoLogIn.addEventListener("click", toggleVisibility(login));
+
+ function toggleVisibility(content) {
+     if (content.style.display === "none") {
+         content.style.display = "block";
+     } else {
+         content.style.display = "none";
+     }
+ }
+
+</script>
+<script src="~/Content/JavaScript/calculator.js">   </script>
+
+
